@@ -10,7 +10,7 @@ var DevToolsAgentProxy = module.exports = function() {
     this.debuggerAgent = null;
     this.port = process.env.DEBUG_PORT || 9999;
     this.host = process.env.DEBUG_HOST || '0.0.0.0';
-    this.internal_port = provess.env.WEBKIT_AGENT_INTERNAL_PORT || 3333;
+    this.internal_port = process.env.WEBKIT_AGENT_INTERNAL_PORT || 3333;
 };
 
 (function() {

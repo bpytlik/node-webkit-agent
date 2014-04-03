@@ -139,7 +139,7 @@ var DevToolsAgent = module.exports = function() {
         if (this.server) return;
 
         this.server = new WebSocketServer({
-            port: provess.env.WEBKIT_AGENT_INTERNAL_PORT || 3333,
+            port: process.env.WEBKIT_AGENT_INTERNAL_PORT || 3333,
             host: 'localhost'
         });
 
